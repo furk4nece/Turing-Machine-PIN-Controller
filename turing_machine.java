@@ -51,10 +51,10 @@ public class turing_machine {
                             tape[1 + compareIndex] = 'Y';
                             tape[6 + compareIndex] = 'Y';
                             compareIndex++;
-                        } else {
+                        } else if (userChar != systemChar) {
                             tape[1 + compareIndex] = 'X';
                             tape[6 + compareIndex] = 'X';
-                            state = State.REJECT;
+                            compareIndex++;
                         }
                     } else {
                         state = State.CHECK_END;
