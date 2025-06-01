@@ -53,7 +53,6 @@ public class turing_machine {
                             compareIndex++;
                         } else if (userChar != systemChar) {
                             tape[1 + compareIndex] = 'X';
-                            tape[6 + compareIndex] = 'X';
                             compareIndex++;
                         }
                     } else {
