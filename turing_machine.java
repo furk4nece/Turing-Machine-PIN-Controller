@@ -31,7 +31,7 @@ public class turing_machine {
         int compareIndex = 0; 
         State state = State.START;
 
-        System.out.println("Start Strip" + new String(tape));
+        System.out.println("Start Strip: " + new String(tape));
 
         while (true) {
             System.out.println("State: " + state + " | Strip: " + new String(tape));
